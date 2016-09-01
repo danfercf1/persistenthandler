@@ -18,7 +18,7 @@
         },
         "autoload": {
           "psr-0" : {
-            "danfercf\\PersistentHandler" : "src"
+            "danfercf\\persistentHandler" : "src"
           }
         }
       }
