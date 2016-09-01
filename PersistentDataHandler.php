@@ -1,5 +1,5 @@
 <?php
-namespace danfercf\persistentHandler;
+namespace danfercf\persistenthandler;
 use \Facebook\PersistentData\PersistentDataInterface;
 use \Yii\Web\Session;
 
