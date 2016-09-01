@@ -1,0 +1,38 @@
+{
+  "name": "yiisoft/persisthandler",
+  "description": "Persistent Handler Facebook SDK",
+  "keywords": ["yii2", "facebook", "handler"],
+  "homepage": "",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "danfercf/persistent-handler",
+        "version": "dev-master",
+        "source": {
+          "url": "git://github.com/danfercf1/persistenthandler.git",
+          "type": "git",
+          "reference": "master"
+        },
+        "autoload": {
+          "psr-0" : {
+            "danfercf\\PersistentHandler" : "src"
+          }
+        }
+      }
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": ">=2.0.6",
+    "yiisoft/yii2-bootstrap": "*",
+    "yiisoft/yii2-swiftmailer": "*",
+    "facebook/graph-sdk": "^5.3"
+  },
+  "config": {
+    "process-timeout": 1800
+  }
+}
