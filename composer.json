@@ -9,7 +9,7 @@
     {
       "type": "package",
       "package": {
-        "name": "danfercf/persistent-handler",
+        "name": "danfercf/persistenthandler",
         "version": "dev-master",
         "source": {
           "url": "git://github.com/danfercf1/persistenthandler.git",
