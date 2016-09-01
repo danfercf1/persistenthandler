@@ -12,9 +12,8 @@
         "name": "danfercf/persistenthandler",
         "version": "1.0.0",
         "source": {
-          "url": "git://github.com/danfercf1/persistenthandler.git",
-          "type": "git",
-          "reference": "master"
+          "url": "https://github.com/danfercf1/persistenthandler.git",
+          "type": "git"
         },
         "autoload": {
           "psr-0" : {
