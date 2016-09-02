@@ -1,7 +1,7 @@
 <?php
 namespace danfercf\persistenthandler;
 use \Facebook\PersistentData\PersistentDataInterface;
-use \Yii\Web\Session;
+use \Yii\web\Session;
 
 class PersistentDataHandler implements PersistentDataInterface
 {
