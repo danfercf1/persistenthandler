@@ -1,7 +1,7 @@
 <?php
 namespace danfercf\persistenthandler;
 use \Facebook\PersistentData\PersistentDataInterface;
-use \Yii\web\Session;
+use Yii;
 
 class PersistentDataHandler implements PersistentDataInterface
 {
@@ -13,11 +13,11 @@ class PersistentDataHandler implements PersistentDataInterface
     /**
      * @inheritdoc
      */
+
     public function get($key)
     {
-        $session = new Session;
-        $session->open();
-        return  $session[$this->sessionPrefix . $key];
+        $session = Yii::$app->session;
+        return $session->get($this->sessionPrefix . $key);
     }
 
     /**
@@ -25,8 +25,7 @@ class PersistentDataHandler implements PersistentDataInterface
      */
     public function set($key, $value)
     {
-        $session = new Session;
-        $session->open();
-        $session[$this->sessionPrefix . $key] = $value;
+        $session = Yii::$app->session;
+        $session->set($this->sessionPrefix . $key, $value);
     }
 }
